@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="upperRectangle">
+        <div class="frst">IRIS</div>
+        <div class="scnd">Hello</div>
+        <div class="hand">
+          <img src="hand.png" alt="..." />
+        </div>
+
+        <div class="thrd">
+          I am Iris, a Virtual Assistant How may I help you?
+        </div>
+      </div>
+
+      <div class="lowerRectangle">
+        <div class="firstxt">Frequently Asked Questions</div>
+        <div class="mark">
+          <img class="qu" src="ques.png" />
+          <img class="mr" src="mark.png" />
+        </div>
+
+        <div class="rect1">
+          <div class="el"></div>
+          <div class="txt">Can I redeem my FB before the original term?</div>
+        </div>
+        <div class="rect2">
+          <div class="el"></div>
+          <div class="txt">How do I pay my Credit card bill?</div>
+        </div>
+        <div class="rect3">
+          <div class="el"></div>
+          <div class="txt">How can I get my Account Statement?</div>
+        </div>
+        <div class="rect4">
+          <div class="el"></div>
+          <div class="txt">What is the tenure of Fixed Deposit?</div>
+        </div>
+
+        <div class="innerlowerRect">
+          <img class="chat" src="chat.png" alt=".." />
+          <div class="chatxt">Start a New Conversation</div>
+        </div>
+      </div>
+
+      <div class="ellipse">
+        <img src="Vector.png" />
+      </div> -->
+    </div>
+
+    <script>
+      let container = document.querySelector(".container");
+
+      function f1() {
+        setTimeout(() => {
+          container.innerHTML = `<div class="upperRectangle"></div>`;
+        }, 2000);
+
+        setTimeout(() => {
+          let uprect = document.querySelector(".upperRectangle");
+
+          uprect.innerHTML = `<div class="frst">IRIS</div>
+        <div class="scnd">Hello</div>
+        <div class="hand">
+          <img src="hand.png" alt="..." />
+        </div>
+
+        <div class="thrd">
+          I am Iris, a Virtual Assistant How may I help you?
+        </div>`;
+
+          let div = document.createElement("div");
+          div.classList.add("ellipse");
+          div.innerHTML = `<img src="Vector.png" />`;
+          container.append(div);
+        }, 3500);
+
+        setTimeout(() => {
+          let div = document.createElement("div");
+
+          div.classList.add("lowerRectangle");
+          div.innerHTML = ` <div class="firstxt">Frequently Asked Questions</div>
+        <div class="mark">
+          <img class="qu" src="ques.png" />
+          <img class="mr" src="mark.png" />
+        </div>`;
+
+          container.append(div);
+        }, 4500);
+        setTimeout(() => {
+          let lrect = document.querySelector(".lowerRectangle");
+
+          let div = document.createElement("div");
+          div.classList.add("rect1");
+          div.innerHTML = ` <div class="el"></div>
+          <div class="txt">Can I redeem my FB before the original term?</div>`;
+
+          lrect.append(div);
+        }, 5500);
+        setTimeout(() => {
+          let lrect = document.querySelector(".lowerRectangle");
+
+          let div = document.createElement("div");
+          div.classList.add("rect2");
+          div.innerHTML = ` <div class="el"></div>
+          <div class="txt">How do I pay my Credit card bill?</div>`;
+
+          lrect.append(div);
+        }, 6500);
+        setTimeout(() => {
+          let lrect = document.querySelector(".lowerRectangle");
+
+          let div = document.createElement("div");
+          div.classList.add("rect3");
+          div.innerHTML = ` <div class="el"></div>
+          <div class="txt">How can I get my Account Statement?</div>`;
+
+          lrect.append(div);
+        }, 7500);
+
+        setTimeout(() => {
+          let lrect = document.querySelector(".lowerRectangle");
+
+          let div = document.createElement("div");
+          div.classList.add("rect4");
+          div.innerHTML = ` <div class="el"></div>
+          <div class="txt">What is the tenure of Fixed Deposit?</div>`;
+
+          lrect.append(div);
+        }, 8500);
+        setTimeout(() => {
+          let lrect = document.querySelector(".lowerRectangle");
+
+          let div = document.createElement("div");
+          div.classList.add("innerlowerRect");
+          div.innerHTML = `  <img class="chat" src="chat.png" alt=".." />
+          <div class="chatxt">Start a New Conversation</div>`;
+
+          lrect.append(div);
+        }, 9500);
+      }
+
+      f1();
+    </script>
+  </body>
+</html>

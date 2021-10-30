@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 630px;
+  width: 416px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.upperRectangle {
+  position: absolute;
+  height: 278px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  background: linear-gradient(123.75deg, #f5821f 1.87%, #ff5c00 120.46%);
+}
+
+.lowerRectangle {
+  position: absolute;
+  width: 390px;
+  height: 400px;
+  left: 13px;
+  top: 199px;
+
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 38px;
+  top: 165px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff7600 0%, #ff5c00 100%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rect1 {
+  position: absolute;
+  width: 339px;
+  height: 50px;
+  left: 26px;
+  top: 79px;
+
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.rect2 {
+  position: absolute;
+  width: 340px;
+  height: 50px;
+  left: 25px;
+  top: 138px;
+
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.rect3 {
+  position: absolute;
+  width: 339px;
+  height: 50px;
+  left: 26px;
+  top: 197px;
+
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.rect4 {
+  position: absolute;
+  width: 339px;
+  height: 50px;
+  left: 25px;
+  top: 256px;
+
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.el {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 8px;
+  top: 21px;
+
+  background: rgba(255, 118, 0, 0.8);
+  border-radius: 50%;
+}
+
+.txt {
+  position: absolute;
+  width: 251px;
+  height: 21px;
+  left: 26px;
+  top: 14px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  /* identical to box height, or 175% */
+
+  color: #2d2d2d;
+}
+
+.innerlowerRect {
+  position: absolute;
+  width: 268px;
+  height: 44px;
+  left: 61px;
+  top: 335px;
+
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+
+.chat {
+  position: absolute;
+  left: 40px;
+  top: 15.44px;
+}
+
+.chatxt {
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  left: 59px;
+  top: 13px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #2d2d2d;
+}
+
+.firstxt {
+  position: absolute;
+  width: 188px;
+  height: 18px;
+  left: 26px;
+  top: 50px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #2d2d2d;
+}
+.mark {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 221px;
+  top: 47px;
+
+  background: rgba(247, 183, 49, 0.12);
+  border-radius: 50px;
+}
+
+.qu {
+  position: absolute;
+  left: 6px;
+  top: 4px;
+}
+
+.mr {
+  position: absolute;
+  left: 8.91px;
+  top: 13.59px;
+}
+
+.frst {
+  position: absolute;
+  width: 53px;
+  height: 39px;
+  left: 56px;
+  top: 20px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.scnd {
+  position: absolute;
+  width: 54px;
+  height: 29px;
+  left: 56px;
+  top: 66px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.hand {
+  position: absolute;
+  width: 21.75px;
+  height: 23.75px;
+  left: 129.61px;
+  top: 68.08px;
+  bottom: 0.7%;
+
+  box-sizing: border-box;
+}
+
+.thrd {
+  position: absolute;
+  width: 228px;
+  height: 46px;
+  left: 56px;
+  top: 105px;
+  color: white;
+}
