@@ -62,11 +62,11 @@
       function f1() {
         setTimeout(() => {
           container.innerHTML = `<div class="upperRectangle"></div>`;
-        }, 2000);
+        }, 1500);
 
         setTimeout(() => {
           let uprect = document.querySelector(".upperRectangle");
-
+         uprect.style.transition = "all 5s ease"
           uprect.innerHTML = `<div class="frst">IRIS</div>
         <div class="scnd">Hello</div>
         <div class="hand">
@@ -81,7 +81,7 @@
           div.classList.add("ellipse");
           div.innerHTML = `<img src="Vector.png" />`;
           container.append(div);
-        }, 3500);
+        }, 3000);
 
         setTimeout(() => {
           let div = document.createElement("div");
@@ -104,7 +104,7 @@
           <div class="txt">Can I redeem my FB before the original term?</div>`;
 
           lrect.append(div);
-        }, 5500);
+        }, 6000);
         setTimeout(() => {
           let lrect = document.querySelector(".lowerRectangle");
 
@@ -114,7 +114,7 @@
           <div class="txt">How do I pay my Credit card bill?</div>`;
 
           lrect.append(div);
-        }, 6500);
+        }, 7000);
         setTimeout(() => {
           let lrect = document.querySelector(".lowerRectangle");
 
@@ -124,7 +124,7 @@
           <div class="txt">How can I get my Account Statement?</div>`;
 
           lrect.append(div);
-        }, 7500);
+        }, 8000);
 
         setTimeout(() => {
           let lrect = document.querySelector(".lowerRectangle");
@@ -135,7 +135,7 @@
           <div class="txt">What is the tenure of Fixed Deposit?</div>`;
 
           lrect.append(div);
-        }, 8500);
+        },9000);
         setTimeout(() => {
           let lrect = document.querySelector(".lowerRectangle");
 
@@ -145,7 +145,7 @@
           <div class="chatxt">Start a New Conversation</div>`;
 
           lrect.append(div);
-        }, 9500);
+        }, 10000);
       }
 
       f1();
